@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smarty Study Camera</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1>Smarty Study Camera</h1>
+
+    <ul class="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#funcionalidades">Funcionalidades</a></li>
+      <li><a href="#login">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-texto">
+    <h2>A câmera inteligente para estudantes</h2>
+
+    <p>
+      O Smarty Study Camera utiliza IA, OCR e automação
+      para transformar fotos de aulas em materiais organizados.
+    </p>
+
+    <button id="modoAulaBtn">
+      Ativar modo aula
+    </button>
+
+    <button id="materiaBtn">
+      Organizar matéria
+    </button>
+  </div>
+
+  <div class="slideshow">
+    <img id="slide" src="https://picsum.photos/600/400?1" alt="slide">
+  </div>
+</section>
+
+<section id="funcionalidades" class="cards">
+
+  <article class="card">
+    <h3>OCR Inteligente</h3>
+    <p>Transforma imagens em texto pesquisável.</p>
+  </article>
+
+  <article class="card">
+    <h3>Correção Automática</h3>
+    <p>Remove reflexos e corrige perspectiva.</p>
+  </article>
+
+  <article class="card">
+    <h3>IA de Estudos</h3>
+    <p>Gera resumos e flashcards automaticamente.</p>
+  </article>
+
+</section>
+
+<section class="resumo-section">
+
+  <h2>IA de Estudos</h2>
+
+  <button id="gerarResumoBtn">
+    Gerar resumo automático
+  </button>
+
+  <div id="resultadoResumo"></div>
+
+</section>
+
+<section id="login" class="login-section">
+
+  <h2>Login</h2>
+
+  <form id="loginForm">
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Digite seu email"
+    >
+
+    <input
+      type="password"
+      id="senha"
+      placeholder="Digite sua senha"
+    >
+
+    <button type="submit">
+      Entrar
+    </button>
+
+  </form>
+
+</section>
+
+</main>
+
+<footer>
+  <p>
+    FutureCall · Bruno Bastos · Arthur Sgarbi · Pedro Oliveira
+  </p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
