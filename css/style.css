@@ -182,3 +182,18 @@ html {
   font-weight: bold;
   color: #1d4ed8;
 }
+
+.simulador-camera {
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 24px;
+}
+
+.resultado-box {
+  margin-top: 20px;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: none;
+}

@@ -154,3 +154,20 @@ if (buscarBtn) {
         resultadoBusca.textContent = `Resultado encontrado para: ${termo}`;
     });
 }
+
+const analisarCameraBtn = document.getElementById("analisarCameraBtn");
+const resultadoCamera = document.getElementById("resultadoCamera");
+
+if (analisarCameraBtn) {
+    analisarCameraBtn.addEventListener("click", function () {
+        resultadoCamera.style.display = "block";
+        resultadoCamera.innerHTML = "Analisando ambiente...";
+
+        setTimeout(function () {
+            resultadoCamera.innerHTML = `
+                <h3>Ambiente detectado</h3>
+                <p>Lousa identificada. Modo aula ativado automaticamente.</p>
+            `;
+        }, 1500);
+    });
+}
