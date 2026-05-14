@@ -149,3 +149,15 @@ footer{
   margin: auto;
   padding: 50px 24px;
 }
+
+.busca-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 24px;
+}
+
+#resultadoBusca {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #1d4ed8;
+}
