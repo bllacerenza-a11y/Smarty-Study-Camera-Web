@@ -137,3 +137,20 @@ if (gerarFlashcardBtn) {
         }
     });
 }
+
+const inputBusca = document.getElementById("inputBusca");
+const buscarBtn = document.getElementById("buscarBtn");
+const resultadoBusca = document.getElementById("resultadoBusca");
+
+if (buscarBtn) {
+    buscarBtn.addEventListener("click", function () {
+        const termo = inputBusca.value.trim();
+
+        if (termo === "") {
+            resultadoBusca.textContent = "Digite algo para buscar.";
+            return;
+        }
+
+        resultadoBusca.textContent = `Resultado encontrado para: ${termo}`;
+    });
+}
