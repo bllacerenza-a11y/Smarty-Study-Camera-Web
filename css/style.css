@@ -182,3 +182,33 @@ html {
   font-weight: bold;
   color: #1d4ed8;
 }
+
+.contador-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 24px;
+  text-align: center;
+}
+
+#contadorCapturas {
+  font-size: 3rem;
+  color: #1d4ed8;
+}
+
+.materias-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 24px;
+}
+
+#listaMaterias {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+#listaMaterias li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 10px;
+}

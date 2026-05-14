@@ -154,3 +154,37 @@ if (buscarBtn) {
         resultadoBusca.textContent = `Resultado encontrado para: ${termo}`;
     });
 }
+
+const capturarConteudoBtn = document.getElementById("capturarConteudoBtn");
+const contadorCapturas = document.getElementById("contadorCapturas");
+
+let totalCapturas = 0;
+
+if (capturarConteudoBtn) {
+    capturarConteudoBtn.addEventListener("click", function () {
+        totalCapturas++;
+        contadorCapturas.textContent = totalCapturas;
+        alert("Conteúdo capturado com sucesso!");
+    });
+}
+
+const inputMateria = document.getElementById("inputMateria");
+const adicionarMateriaBtn = document.getElementById("adicionarMateriaBtn");
+const listaMaterias = document.getElementById("listaMaterias");
+
+if (adicionarMateriaBtn) {
+    adicionarMateriaBtn.addEventListener("click", function () {
+        const materia = inputMateria.value.trim();
+
+        if (materia === "") {
+            alert("Digite o nome de uma matéria.");
+            return;
+        }
+
+        const item = document.createElement("li");
+        item.textContent = materia;
+
+        listaMaterias.appendChild(item);
+        inputMateria.value = "";
+    });
+}
