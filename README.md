@@ -240,6 +240,35 @@ Projeto acadêmico desenvolvido para o challenge proposto pela JOVI na disciplin
 
 ---
 
+---
+
+## Relação com o Sprint de Web Development
+
+Este projeto atende aos principais requisitos do Sprint 2 de Web Development, pois utiliza JavaScript puro para criar interações dinâmicas com o usuário.
+
+### Recursos implementados com JavaScript
+
+- Botões com eventos de clique
+- Alerts, prompts e confirms
+- Slideshow dinâmico
+- Validação de formulário
+- Manipulação de elementos com DOM
+- Criação dinâmica de cards
+- Simulação de busca inteligente
+- Contador de conteúdos capturados
+- Modo escuro interativo
+- Menu mobile interativo
+
+### Organização do código
+
+O projeto foi separado em arquivos específicos:
+
+- `index.html` para a estrutura principal
+- `funcionalidades.html` para apresentação das funções
+- `sobre.html` para contextualização do projeto
+- `css/style.css` para estilização
+- `js/script.js` para interatividade
+
 # Considerações Finais
 
 O Smarty Study Camera busca demonstrar como tecnologias como visão computacional, OCR e inteligência artificial podem transformar a câmera do smartphone em uma ferramenta inteligente de apoio aos estudos.
