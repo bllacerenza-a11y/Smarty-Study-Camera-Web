@@ -105,3 +105,35 @@ loginForm.addEventListener("submit", function(event){
     alert("Login realizado com sucesso!");
 
 });
+
+const gerarFlashcardBtn = document.getElementById("gerarFlashcardBtn");
+const flashcardsContainer = document.getElementById("flashcardsContainer");
+
+const flashcards = [
+    "O que é OCR?",
+    "Como a IA ajuda nos estudos?",
+    "Qual a função da correção automática?",
+    "Por que organizar por matéria?"
+];
+
+let flashcardIndice = 0;
+
+if (gerarFlashcardBtn) {
+    gerarFlashcardBtn.addEventListener("click", function () {
+        const card = document.createElement("article");
+        card.classList.add("mini-card");
+
+        card.innerHTML = `
+            <h3>Flashcard</h3>
+            <p>${flashcards[flashcardIndice]}</p>
+        `;
+
+        flashcardsContainer.appendChild(card);
+
+        flashcardIndice++;
+
+        if (flashcardIndice >= flashcards.length) {
+            flashcardIndice = 0;
+        }
+    });
+}
