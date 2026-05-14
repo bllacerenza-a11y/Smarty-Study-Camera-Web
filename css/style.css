@@ -11,6 +11,25 @@ body{
   color:#172033;
 }
 
+.btn-tema {
+  background: white;
+  color: #1d4ed8;
+  padding: 10px 14px;
+}
+
+.modo-escuro {
+  background: #111827;
+  color: white;
+}
+
+.modo-escuro .card,
+.modo-escuro .mini-card,
+.modo-escuro .resultado-box,
+.modo-escuro #resultadoResumo {
+  background: #1f2937;
+  color: white;
+}
+
 .navbar{
   display:flex;
   justify-content:space-between;
@@ -224,4 +243,25 @@ html {
   margin-bottom: 10px;
   padding: 14px;
   border-radius: 10px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu.menu-ativo {
+    display: flex;
+  }
 }
