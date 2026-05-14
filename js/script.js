@@ -167,3 +167,24 @@ if (capturarConteudoBtn) {
         alert("Conteúdo capturado com sucesso!");
     });
 }
+
+const inputMateria = document.getElementById("inputMateria");
+const adicionarMateriaBtn = document.getElementById("adicionarMateriaBtn");
+const listaMaterias = document.getElementById("listaMaterias");
+
+if (adicionarMateriaBtn) {
+    adicionarMateriaBtn.addEventListener("click", function () {
+        const materia = inputMateria.value.trim();
+
+        if (materia === "") {
+            alert("Digite o nome de uma matéria.");
+            return;
+        }
+
+        const item = document.createElement("li");
+        item.textContent = materia;
+
+        listaMaterias.appendChild(item);
+        inputMateria.value = "";
+    });
+}
