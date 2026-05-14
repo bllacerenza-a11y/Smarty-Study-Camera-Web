@@ -228,9 +228,9 @@ A solução foi pensada principalmente para:
 # Grupo FutureCall
 
 ## Integrantes
-- Bruno Bastos
-- Arthur Sgarbi
-- Pedro Oliveira
+- Bruno Bastos Rm: 569434
+- Arthur Sgarbi Rm:569774
+- Pedro Oliveira Rm: 572468
 
 ---
 
