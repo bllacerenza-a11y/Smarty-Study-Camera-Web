@@ -182,3 +182,15 @@ html {
   font-weight: bold;
   color: #1d4ed8;
 }
+
+.contador-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 50px 24px;
+  text-align: center;
+}
+
+#contadorCapturas {
+  font-size: 3rem;
+  color: #1d4ed8;
+}

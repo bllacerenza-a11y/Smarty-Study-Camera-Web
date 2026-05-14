@@ -154,3 +154,16 @@ if (buscarBtn) {
         resultadoBusca.textContent = `Resultado encontrado para: ${termo}`;
     });
 }
+
+const capturarConteudoBtn = document.getElementById("capturarConteudoBtn");
+const contadorCapturas = document.getElementById("contadorCapturas");
+
+let totalCapturas = 0;
+
+if (capturarConteudoBtn) {
+    capturarConteudoBtn.addEventListener("click", function () {
+        totalCapturas++;
+        contadorCapturas.textContent = totalCapturas;
+        alert("Conteúdo capturado com sucesso!");
+    });
+}
