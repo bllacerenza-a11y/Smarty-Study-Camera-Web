@@ -149,3 +149,25 @@ footer{
   margin: auto;
   padding: 50px 24px;
 }
+
+.card,
+.mini-card,
+button,
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.mini-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
