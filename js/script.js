@@ -3,6 +3,14 @@ const modoAulaBtn = document.getElementById("modoAulaBtn");
 const materiaBtn = document.getElementById("materiaBtn");
 const gerarResumoBtn = document.getElementById("gerarResumoBtn");
 const resultadoResumo = document.getElementById("resultadoResumo");
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.querySelector(".menu");
+
+if (menuBtn) {
+    menuBtn.addEventListener("click", function () {
+        menu.classList.toggle("menu-ativo");
+    });
+}
 
 modoAulaBtn.addEventListener("click", function(){
 
@@ -22,27 +30,29 @@ materiaBtn.addEventListener("click", function(){
 
 });
 
-gerarResumoBtn.addEventListener("click", function(){
+if (gerarResumoBtn) {
+    gerarResumoBtn.addEventListener("click", function () {
+        const confirmar = confirm("Deseja gerar um resumo automático com IA?");
 
-    resultadoResumo.style.display = "block";
+        if (!confirmar) {
+            alert("Geração de resumo cancelada.");
+            return;
+        }
 
-    resultadoResumo.innerHTML = "Gerando resumo inteligente...";
+        resultadoResumo.style.display = "block";
+        resultadoResumo.innerHTML = "Gerando resumo inteligente...";
 
-    setTimeout(function(){
-
-        resultadoResumo.innerHTML = `
-        <h3>Resumo da Aula</h3>
-
-        <p>
-        A IA identificou os principais tópicos da aula:
-        OCR, visão computacional, automação e geração
-        automática de flashcards.
-        </p>
-        `;
-
-    }, 2000);
-
-});
+        setTimeout(function () {
+            resultadoResumo.innerHTML = `
+                <h3>Resumo da Aula</h3>
+                <p>
+                A IA identificou os principais tópicos da aula:
+                OCR, visão computacional, automação e geração automática de flashcards.
+                </p>
+            `;
+        }, 2000);
+    });
+}
 
 const imagens = [
     "https://picsum.photos/600/400?1",
@@ -200,5 +210,18 @@ if (adicionarMateriaBtn) {
 
         listaMaterias.appendChild(item);
         inputMateria.value = "";
+    });
+} })}
+const modoEscuroBtn = document.getElementById("modoEscuroBtn");
+
+if (modoEscuroBtn) {
+    modoEscuroBtn.addEventListener("click", function () {
+        document.body.classList.toggle("modo-escuro");
+
+        if (document.body.classList.contains("modo-escuro")) {
+            modoEscuroBtn.textContent = "Modo claro";
+        } else {
+            modoEscuroBtn.textContent = "Modo escuro";
+        }
     });
 }
